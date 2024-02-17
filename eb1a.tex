@@ -1,0 +1,624 @@
+% reference https://andreychemist.github.io/assets/EB1A.pdf
+% https://www.niweb1a.com/about/13.html
+% Mail Address: https://www.uscis.gov/forms/all-forms/direct-filing-addresses-for-form-i-140-immigrant-petition-for-alien-worker
+%: I-907 FOR PREMIUM PROCESSING :https://www.uscis.gov/i-907
+% G1450 FOR PAYMENT: https://www.uscis.gov/sites/default/files/document/forms/g-1450.pdf
+\documentclass{article}
+\usepackage[fontsize=11pt]{fontsize}
+\usepackage{geometry, overpic}
+\newgeometry{vmargin={25mm, 25mm}, hmargin={25mm,25mm}}
+
+\PassOptionsToPackage{hyphens}{url}\usepackage[hidelinks]{hyperref}
+
+\usepackage{lipsum}
+
+% paragraph spacing and indent
+\setlength{\parskip}{1.2em}
+\setlength\parindent{0pt}
+% line space
+\linespread{1.2}
+
+\usepackage{pdfpages}
+
+\usepackage{csquotes}
+\usepackage{xcolor}
+\usepackage{zref-totpages}
+
+
+% watermark
+\usepackage{draftwatermark}
+\SetWatermarkText{batchfy.com/eb1a}
+\SetWatermarkScale{2}
+% \DraftwatermarkOptions{color={[HTML]{E7AB9A}}}
+
+\usepackage[]{enumitem}
+
+% table related
+\usepackage{makecell,booktabs,multirow}
+
+
+\usepackage[capitalize]{cleveref}
+\crefname{section}{Section.}{Sections.}
+\crefname{exhibit}{Exhibit.}{exhibits}
+
+
+% text-align
+\usepackage{ragged2e}
+\usepackage{blindtext}
+
+% quotes
+\usepackage{csquotes}
+
+\usepackage{titlesec}
+\titleformat{\section}{\bfseries}{\underline{\large{Section.\arabic{section}}}}{0.4em}{}
+\titleformat{\subsection}{\bfseries}{\arabic{section}.\arabic{subsection}}{0.4em}{}
+\titleformat{\subsubsection}{\bfseries}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}{0.5em}{}
+
+\titlespacing{\section}{0em}{0em}{0em}
+\titlespacing{\subsection}{0em}{0em}{0em}
+\titlespacing{\subsubsection}{0em}{0em}{0em}
+
+% style of ToC
+\renewcommand{\contentsname}{\hfill\bfseries\Large Table of Contents \hfill}  
+% depth of table of content
+\setcounter{tocdepth}{3}
+
+\usepackage{fontawesome}
+
+% define petitioner's name
+\newcommand{\fname}{Walter}
+\newcommand{\lname}{White}
+\newcommand{\fullname}{\fname~\lname}
+\newcommand{\dr}{Dr.~\fname~\lname}
+\newcommand{\drfn}{Dr.~\lname}
+\newcommand{\myaddr}{212 Aliso Dr SE \\ Albuquerque, NM 87108. \\ \faMobilePhone \ +1-(505) 117-8987}
+
+\newcommand{\cs}{Chemistry}
+\newcommand{\oc}{Organic Chemistry}
+\newcommand{\independent}{\textbf{Independent Advisory Opinion}}
+\newcommand{\numpubs}{16}
+\newcommand{\citations}{3,139}
+
+
+\newcommand{\referto}[1]{(\emph{Please refer to~\cref{#1}})}
+
+\newcounter{exhibit}
+\setcounter{exhibit}{0}
+\newcommand{\exhibit}[1]{\stepcounter{exhibit} \noindent Exhibit~\arabic{exhibit}}
+\newcommand{\mypar}[1]{\vspace{0.5em}\noindent\textbf{#1}.\hspace{0.2em}}
+
+\usepackage{fancyhdr}
+
+\lhead{Permanent Residence Petition for \dr}
+\rhead{}
+\fancyfoot{}
+\fancyfoot[R]{\thepage~of \ztotpages}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\begin{document}
+\pagestyle{empty} 
+\vspace{15em}
+
+\begin{center}
+Immigrant Petition for Alien Worker \\
+for the Alien with Extraordinary Ability in Science (EB-1A)
+\end{center}
+
+\vspace{2em}
+\begin{center}
+TABLE OF CONTENTS
+\end{center}
+
+\begin{itemize}
+    \item Form G-1145 e-Notification of Application/Petition Acceptance
+    %
+    \item Form G-1450 for the \$700 filing fee of form I-140;
+    \item Form I-140, Immigrant Petition for Alien Worker.
+    %
+    \item Form G-1450 for the \$2,500 Premium Processing Service.
+    \item Form I-907, Request for Premium Processing Service.
+    %
+    \item Petition letter (Initial Evidence in Support of the I-140 Immigrant Petition)
+    \item List of Exhibits
+    \item Exhibits 1–23
+    \item \dr's ID information (I-94, passport, DS2019)
+\end{itemize}
+
+% \includepdf{forms-eb1a/g-1145-filled}
+% \includepdf{forms-eb1a/g-1450-i140}
+% %
+% \includepdf[pages=-]{forms-eb1a/i-140}
+% \includepdf{forms-eb1a/g-1450-pp}
+% \includepdf{forms-eb1a/i-907}
+%
+
+\pagebreak
+\pagestyle{fancy}
+\setcounter{page}{1}
+
+
+\begin{FlushRight}
+    Dr. \fullname \\
+    \myaddr
+    \vspace{-1em}
+\end{FlushRight}
+
+
+\today
+
+% https://www.uscis.gov/forms/filing-guidance/checklist-of-required-initial-evidence-for-form-i-140-for-informational-purposes-only
+% https://www.uscis.gov/forms/filing-guidance/tips-for-filing-forms-by-mail
+% see https://www.uscis.gov/forms/all-forms/direct-filing-addresses-for-form-i-140-immigrant-petition-for-alien-worker
+% for where you should submit your application
+
+USCIS \\
+Attn: Premium I-140 \\
+P.O. Box 21500 \\
+Phoenix, AZ 85036-1500
+
+
+ % USCIS Nebraska Service Center \\
+ % 850 S. Street, Lincoln, NE 68508
+
+
+\underline{\textbf{Initial Evidence in Support of the I-140 Immigrant Petition}}
+
+\begin{tabular}{ll}
+    \textbf{Petitioner and Beneficiary:} & \fullname,Ph.D \\
+
+    \textbf{Classification Sought:} & INA §203(b)(1)(A)\\
+    & Alien of Extraordinary Ability\\
+    \textbf{Type of petition:} & I-140 \\
+\end{tabular}
+
+\noindent\textbf{Dear Immigration Officer}:
+
+% This letter is respectfully submitted in support of \dr’s immigrant petition for classification as a qualified immigrant under the first preference employment immigration for Aliens of Extraordinary Ability pursuant to section 203(b)(1)(A) of the Immigration and Nationality Act (“the Act”).  8 U.S.C. § 1153(b)(1)(A).
+% % for classification as a member of the professions holding an advanced degree
+% % requesting a national interest waiver of the requirement of a job offer.
+% The submitted evidence demonstrates that \drfn{} is an alien of Extraordinary ability in the sciences,
+% specifically in \underline{\oc}, who will substantially benefit prospectively
+% the national economy, educational interests,
+% and the welfare of the United States
+% (\emph{please refer to Sec.\ref{sec:member-of-prof} and Sec.\ref{sec:merit-importance}}).
+This letter is respectfully submitted in support of \dr's
+petition for classification as a qualified immigrant under
+the first preference employment immigration for Aliens of
+Extraordinary Ability pursuant to section 203(b)(1)(A)
+of the Immigration and Nationality Act (“the Act”)  8 U.S.C. \S 1153(b)(1)(A).
+%
+The evidence submitted here specifically demonstrates that:
+
+\begin{enumerate}
+\item \dr{} has a level of expertise indicating that he is one of that small percentage who has
+risen to the very top of the field of \oc.
+% https://www.law.cornell.edu/cfr/text/8/204.5
+\item \drfn{} provides evidence that he satisfies \underline{four} of  \underline{ten} criteria listed in 8 CFR, Section 204.5(h)(3), namely:
+    \begin{itemize}
+        % reference: https://www.law.cornell.edu/cfr/text/8/204.5
+        % iii) Published material about the alien in professional or major
+        % trade publications or other major media,
+        % relating to the alien's work in the field for which classification is sought.
+        % Such evidence shall include the title, date, and author of the material,
+        % and any necessary translation; 
+        \item \textbf{204.5(h)(3) iii}:
+        Published material about \dr's research in \oc{}
+        in professional or major trade publications or other major media. \referto{sec:mit-technology-review}
+        % iv) Evidence of the alien's participation, either individually or on a panel,
+        % as a judge of the work of others in the same or an allied field of specification for which
+        % classification is sought;
+        \item \textbf{204.5(h)(3) iv}: Participation of \dr{} as a judge of the work of others in the field of \oc.
+        \referto{sec:judge}
+        % v) Evidence of the alien's original scientific, scholarly, artistic, athletic,
+        % or business-related contributions of major significance in the field;
+        \item \textbf{204.5(h)(3) v}: Evidence of \drfn's original scientific and scholarly contributions of major
+        significance in the field. \referto{sec:original-contribution}
+        % vi) Evidence of the alien's authorship of scholarly articles in the field,
+        % in professional or major trade publications or other major media; 
+        \item \textbf{204.5(h)(3) vi} Evidence of \dr's authorship of scholarly articles in the field,
+        in professional or major trade publications or other major media. \referto{sec:scholarly-articles}
+    \end{itemize}
+
+
+\item \drfn{} \dr's work will substantially benefit prospectively the United States
+(please refer to ~\cref{sec:beneficial-to-us})
+
+\item \drfn{} In the United States, \dr{} plans to continue work in the area of expertise.
+(please refer to \ref{exh:statement}: signed statement from \dr{}
+on his plans for continuing work in the U.S.
+and to \ref{exh:offers-univ-x} his current job offer)
+
+\end{enumerate}
+
+In the United States, \drfn{} plans to continue his research in the area of expertise.
+(please refer to the statement from \drfn{} detailing plans on how he intends to continue work in the US
+and to \ref{exh:offers-univ-x}: \dr's current job offers.)
+
+Pursuant to 8 CFR, Section 204.5(h)(1), \drfn{} may file a petition on Form I-140 for
+classification under Section 203(b)(1)(A) of the Act as an alien of extraordinary ability in the sciences on his own behalf.
+
+Pursuant to 8 CFR, Section 204.5(h)(5), neither an offer for employment in the United States nor a labor certification is required for this classification.
+
+% https://www.law.cornell.edu/cfr/text/8/204.5
+
+Sincerely \\
+
+\vspace{2em}
+
+\fullname
+
+\vspace{-1em}
+
+\myaddr \\
+Website: \url{https://walter-white.com}   \\
+E-mail: \ walter.white@gmail.com
+\pagebreak
+
+% \includepdf{forms/g-1145}
+% \includepdf{forms/g-1450}
+% \includepdf[pages=-]{forms/i-140}
+
+\pagebreak
+% \renewcommand{\contentsname}{\begin{center}\huge{Petition Letter}\end{center}}
+\renewcommand{\baselinestretch}{0.8}\normalsize
+\tableofcontents
+\renewcommand{\baselinestretch}{1.0}\normalsize
+\pagebreak
+
+
+\section { Overview of \drfn{}’s Major Achievement and Qualifications}
+\lipsum[1-1]
+
+
+\pagebreak
+\section{Proof of Extraordinary Ability}
+\subsection{Part One: Evidence Submitted Under 8 C.F.R. \S 204.5(h)(3)}
+\subsubsection{
+    \dr's Research on \oc{} Was Covered by Major Media.
+    % Evidence of published material about the \dr's research work in \oc{}
+    % in professional or major trade publications or other major media.
+}\label{sec:mit-technology-review}
+
+\noindent\textbf{A: \dr's work was covered by MIT Technology Review.}
+\lipsum[1-1]
+
+\noindent\textbf{B: MIT Technology Review is a Major Media}
+\lipsum[1-1]
+
+
+\subsubsection{
+    Evidence of \dr's participation, either individually or on a panel,
+    as a judge of the work of others in the same or
+    an allied field of specialization for which classification is sought
+}\label{sec:judge}
+\lipsum[1-1]
+
+
+\subsubsection{
+    Evidence of \dr's original scientific, scholarly, artistic,
+    or business-related contributions of major significance
+}\label{sec:original-contribution}
+
+The USCIS policy manual (\ref{exh:uscis-policy-manual})
+states that  examples of relevant evidence of "contribution of major significance"
+include, but are not limited to:
+\begin{enumerate}
+    \item Published materials about the significance of the person’s original work;
+    \item Documentation that the person’s original work was cited at a level indicative of major significance in the field; and
+    \item Patents or licenses deriving from the person’s work or evidence of commercial use of the person’s work.
+\end{enumerate}
+
+\noindent\textbf{A: Published materials about the significance of \dr's original work}
+\lipsum[1-1]
+
+\noindent\textbf{B: \dr's original work has been cited at a level indicative of major significance}
+\lipsum[1-1]
+
+\noindent\textbf{C: Evidence of commercial use of the \dr's work}
+\lipsum[1-1]
+
+\noindent\textbf{D: \dr's work has practical values}
+\lipsum[1-1]
+
+\noindent\textbf{E: \dr's research has been published in some of the top venues in his field}
+\lipsum[1-1]
+
+
+Based on these evidences, \dr{} clearly satisfies
+the criterion in \textbf{204.5(h)(3) v}
+
+\pagebreak
+\subsubsection{
+    Evidence of \dr's authorship of scholarly articles in the field,
+    in professional or major trade publications or other major media
+}\label{sec:scholarly-articles}
+\lipsum[1-1]
+
+
+\section{
+    \dr's Work Will Substantially Benefit Prospectively the United States
+}\label{sec:beneficial-to-us}
+
+
+\subsection{\oc{} is an area of substantial merit}
+\lipsum[1-1]
+
+\subsection{\drfn's work will be beneficial to the United States}
+\lipsum[1-1]
+
+
+\section{Conclusion}
+
+
+
+\pagebreak
+\section{INDEX OF EXHIBITS}
+
+
+\setlist[enumerate,1]{itemsep=-0.2ex,leftmargin=18mm,label={Exhibit~\arabic*~},align=parleft,labelsep=1.4cm}
+
+\underline{CV, diploma and Statement from \dr.}
+\begin{enumerate}
+    \item \drfn's CV \label{exh:cv}
+    \item \drfn's Google scholar profile \label{exh:google-scholar}
+    \item Copies of \drfn's PhD diploma, transcript, certificate, and degree evaluation \label{exh:diploma}
+    \item Signed statement confirming \drfn's proposed endeavor and his future plans for research and employment\label{exh:statement}
+\end{enumerate}
+
+\underline{Letters of Recommendation}
+\begin{enumerate}[resume]
+    \item Letter \& CV from Dr. Name1, Professor, University A, USA\label{exh:letter-a}
+    \item Letter \& CV from Dr. Name2, Professor, University B, United Kingdom\label{exh:letter-b}
+    \item Letter \& CV from Dr. Name3, associate Professor, City A University C\label{exh:letter-c}
+    \item Letter \& CV from Dr. Name4, associate professor, Univerisity E, City E, USA (\textbf{Independent Advisory Opinion}) \label{exh:letter-d}
+    \item Letter \& CV from Dr. Name5, Academic Councilor, University F, Erlangen, Country F (\textbf{Independent Advisory Opinion}) \label{exh:letter-e}
+    \item Letter from Dr. Name3, Director of \oc{} research, XX Lab, City A, Counry WK.\label{exh:letter-f}
+\end{enumerate}
+
+\underline{Academic and Professional Background}
+\begin{enumerate}[resume]
+    \item Evidence of \drfn's peer review services.\label{exh:peer-review}
+    \item Abstract of \drfn's master and Ph.D. thesis.\label{exh:thesis}
+    \item List and first pages of peer-reviewed publications co-authored by \drfn.\label{exh:publications}
+\end{enumerate}
+
+
+\underline{Others}
+\begin{enumerate}[resume]
+    \item Job offers from the University of X.\label{exh:offers-univ-x}
+    \item 2022 Journal Citation Index rankings in \cs{} and \oc.\label{exh:jcr}
+    \item 2022 Google scholar metrics\label{exh:gscholar-metrics}
+    \item The 2022 USNEWS world university ranking.\label{exh:usnews-ranking}
+    \item First page of a report about \oc{} from Precendence Research.\label{exh:precedence}
+    % \item Two of \drfn's publications are recognized by Web of Science as highly-cited papers\label{exh:highly-cited}.
+    \item a) Computer Research Association memorandum describing the publication climate in computer science.\label{exh:cs-pub-climate}
+    b) Testimonial from Dr. Michael D. Ernst (Professor of Computer Science \& Engineering, University of Washington) describing the publication climate in computer science.\label{exh:pub-climate-cs}
+    \item An article from MIT technology review covering \drfn's research on palm recognition.\label{exh:mit}
+    \item MIT technology review circulation. \label{exh:mit-circulation}
+    \item Article on Yahoo Finance revealing revealing the application of technology-A technology to City-A Metro payment system.\label{exh:yahoo}
+    \item USCIS policy manual, Volume 6, part f, chapter 2. \label{exh:uscis-policy-manual}
+\end{enumerate}
+
+\pagebreak
+\begin{center}
+    \Large{\ref{exh:cv}: \drfn's Curriculum Vitae}
+\end{center}
+% \includepdf[pages=-]{exhibits/cv.pdf}
+
+\pagebreak
+% google scholar
+\begin{center}
+    \Large{\ref{exh:google-scholar}: \drfn's Google scholar profile}
+\end{center}
+% \includepdf[pages=-]{exhibits/cv.pdf}
+
+\pagebreak
+% Diploma
+\begin{center}
+    \Large{\ref{exh:diploma}: \drfn's Ph.D. diploma, transcript and degree evaluation.}
+\end{center}
+% \includepdf[pages=-]{exhibits/cv.pdf}
+\pagebreak
+
+\pagebreak
+\begin{center}
+\Large{\ref{exh:statement}: Statement from \dr{} on His Plans for Continuing Work in the U.S.
+US
+}
+\end{center}
+
+\today
+
+My name is \fullname{}.
+I am the beneficiary of the I-140 Immigrant Petition for Alien Worker,
+seeking EB-1A immigrant classification as an individual of extraordinary ability.
+%
+
+\lipsum[1-1]
+
+\vspace{2em}
+
+\fullname
+
+\vspace{-1em}
+
+\myaddr \\
+Website: \url{https://walter-white.com}   \\
+E-mail: \ walter.white@gmail.com
+\pagebreak
+
+
+\pagebreak
+\begin{center}
+    \Large{\ref{exh:letter-a}: Short CV and letter from Professor A}
+\end{center}
+% \includepdf[pages=-]{exhibits/cv.pdf}
+
+
+\pagebreak
+\begin{center}
+    \Large{\ref{exh:letter-b}: Short CV and letter from Professor B}
+\end{center}
+% \includepdf[pages=-]{exhibits/cv.pdf}
+
+\pagebreak
+\begin{center}
+    \Large{\ref{exh:letter-c}: Short CV and letter from Professor C}
+\end{center}
+% \includepdf[pages=-]{exhibits/cv.pdf}
+
+\pagebreak
+\begin{center}
+    \Large{\ref{exh:letter-d}: Short CV and letter from Professor D}
+\end{center}
+% \includepdf[pages=-]{exhibits/cv.pdf}
+
+\pagebreak
+\begin{center}
+    \Large{\ref{exh:letter-e}: CV and letter from Dr. E}
+\end{center}
+\begin{center}
+    Name5's academic CV:
+\end{center}
+
+\pagebreak
+% \includepdf[pages=-]{exhibits/cv.pdf}
+
+\begin{center}
+    \Large{\ref{exh:letter-f}: CV and letter from Dr. Name3}
+\end{center}
+% \includepdf[pages=-]{exhibits/cv.pdf}
+
+
+\pagebreak
+% peer review
+\begin{center}
+    \Large{\ref{exh:peer-review}:  Evidence of Dr. \lname{}’s peer review services }
+\end{center}
+
+% \includepdf[pages=-]{exhibits/cv.pdf}
+\pagebreak
+
+% master thesis
+\begin{center}
+    \Large{\ref{exh:thesis}:  Abstract of master and Ph.D. thesis by \drfn.}
+\end{center}
+% \includepdf[pages=-]{exhibits/cv.pdf}
+\pagebreak
+
+% List publications
+\begin{center}
+    \Large{{\ref{exh:publications}: List and first pages of \numpubs{} peer-reviewed publications co-authored by \drfn.}}
+\end{center}
+
+\emph{Publication during master's study:}\vspace{-1em}
+\begin{itemize}
+    \item Example publication
+    \item Example publication
+    \item Example publication
+\end{itemize}
+\emph{Publication during Ph.D.:}\vspace{-1em}
+\begin{itemize}
+    \item Example publication
+    \item Example publication
+    \item Example publication
+\end{itemize}
+\emph{Publication after Ph.D.:}\vspace{-1em}
+\begin{itemize}
+    \item Example publication
+    \item Example publication
+    \item Example publication
+\end{itemize}
+
+\pagebreak
+% \includepdf[pages=-]{exhibits/cv.pdf}
+
+
+
+% Offer
+\begin{center}
+    \Large{\ref{exh:offers-univ-x}: \drfn's Job offers from University B and DS2019 form}
+\end{center}
+% \includepdf[pages=-]{exhibits/cv.pdf}
+\pagebreak
+
+% Offer
+\begin{center}
+    \Large{\ref{exh:jcr}: 2022 Journal Citation Index in Engineering}
+\end{center}
+% \includepdf[pages=-]{exhibits/cv.pdf}
+\pagebreak
+
+% 2022 Google scholar metrics
+\begin{center}
+    \Large{\ref{exh:gscholar-metrics}: 2023 Google scholar metrics}
+\end{center}
+% \includepdf[pages=-]{exhibits/cv.pdf}
+\pagebreak
+
+% The 2022 USNEWS world university ranking
+\begin{center}
+    \Large{\ref{exh:usnews-ranking}:  The 2022 USNEWS world university ranking}
+\end{center}
+% \includepdf[pages=-]{exhibits/cv.pdf}
+\pagebreak
+
+% First page of a report about Artificial Intelligence from the national qualification register.
+\begin{center}
+    \Large{\ref{exh:precedence}: First page of a report from Precendence Research}
+\end{center}
+% \includepdf[pages=-]{exhibits/cv.pdf}
+\pagebreak
+
+% Two of Dr. \lname{}’s publications are recognized by Web of Science as highly-cited papers
+% \begin{center}
+%     \Large{\ref{exh:highly-cited}: Two of \drfn's publications are recognized by Web of Science as highly-cited papers }
+% \end{center}
+% \pagebreak
+
+\begin{center}
+    \Large{\ref{exh:cs-pub-climate}: Testimonial from Dr. Michael Erns, University of Washington}
+\end{center}
+% \includepdf[pages=-]{exhibits/cv.pdf}
+\pagebreak
+
+% MIT
+\begin{center}
+    \Large{\ref{exh:mit}: An article from MIT technology review covering \drfn's research on palm recognition }
+\end{center}
+\pagebreak
+
+
+% MIT circulation
+\begin{center}
+    \Large{\ref{exh:mit-circulation}: MIT Technology Review circulation from its official website.}
+\end{center}
+\pagebreak
+% \includepdf[pages=-]{exhibits/cv.pdf}
+
+
+% USCIS manual
+\begin{center}
+    \Large{\ref{exh:uscis-policy-manual}: USCIS policy manual Volume 6, part f, chapter 2.}
+\end{center}
+\pagebreak
+% \includepdf[pages=1-4]{PolicyManual-USCIS.pdf}
+
+
+% yahoo
+\begin{center}
+    \Large{\ref{exh:yahoo}: 
+    Article on Yahoo Finance}
+\end{center}
+% \includepdf[pages=-]{exhibits/cv.pdf}
+\pagebreak
+
+\begin{center}
+    \Large{\drfn's ID information (Passport ,DS2019, J-1 visa, I-94)}
+\end{center}
+\pagebreak
+
+% \includepdf[pages=-]{exhibits/cv.pdf}
+
+\end{document}
